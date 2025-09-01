@@ -1,0 +1,6 @@
+streamlit
+plotly
+streamlit-authenticator
+sqlalchemy
+passlib
+pandas
