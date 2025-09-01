@@ -1,32 +1,32 @@
-# Gamified.Interview.Progress.Tracker
-This is a Python Flask web app that helps users track their progress as they prepare for technical interviews. The app features a gamified interface: a digital garden that visually grows as users complete more progress.
+# Gamified Interview Progress Tracker
+
+A Streamlit-based web application for tracking and gamifying technical interview preparation.
 
 ## Features
-- User login/registration (username only)
-- Progress tracking (increments by 10% per task for demo)
-- Visual digital garden that grows as progress increases
-- Simple, clean UI
+- User authentication and progress saving
+- Stages, levels, missions, and hurdles for various technical skills
+- Timed challenges and leaderboards
+- Dashboard with progress, badges, scores, and achievements
+- Personalized recommendations
+- Visually engaging UI with icons and graphics
+- Modular, extensible codebase
+
+## Project Structure
+- `app/` - Streamlit UI and frontend logic
+- `backend/` - Business logic, authentication, and API endpoints
+- `models/` - Data models and database logic (SQLite)
+- `assets/` - Icons, images, and static files
 
 ## Getting Started
-
-1. **Install dependencies:**
+1. Install requirements:
+   ```bash
+   pip install -r requirements.txt
    ```
-pip install -r requirements.txt
+2. Run the app:
+   ```bash
+   streamlit run app/main.py
    ```
-2. **Run the app:**
-   ```
-python app.py
-   ```
-3. **Open your browser:**
-   Visit [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-## Folder Structure
-- `app.py` - Main Flask app
-- `templates/` - HTML templates
-- `requirements.txt` - Python dependencies
-
-## Notes
-- This is a demo version. Progress increments are hardcoded for demonstration.
-- The digital garden uses free icon images as placeholders. Replace with your own assets for production.
-
----
+## Extending
+- Add new missions/hurdles by updating the `models/` and `backend/` modules.
+- UI enhancements can be made in `app/`.
